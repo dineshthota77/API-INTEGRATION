@@ -63,5 +63,7 @@ This project highlights key web development concepts:
    ```bash
    git clone https://github.com/dineshthota77/API-INTEGRATION.git
 
+#OUTPUT
+
 ![Task 1(1)](https://github.com/user-attachments/assets/c7681e79-3cbd-4cfd-b1e4-09916d89cf47)
 ![Task 1(1)](https://github.com/user-attachments/assets/ccc46fcd-d82a-43db-94fb-167125bc17e6)
