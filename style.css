@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: radial-gradient(circle, #0f0c29, #302b63, #24243e);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: hueRotate 20s linear infinite;
+}
+
+@keyframes hueRotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.container {
+    padding: 20px;
+}
+
+.weather-box {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    width: 320px;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+    animation: slideIn 1.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.weather-box h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #00ffe7;
+    text-shadow: 0 0 8px #00ffe7;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 15px;
+    font-size: 16px;
+    outline: none;
+    background: #1c1c2b;
+    color: #00ffe7;
+}
+
+button {
+    padding: 10px 20px;
+    background: #00ffe7;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #1c1c2b;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #00c3aa;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
